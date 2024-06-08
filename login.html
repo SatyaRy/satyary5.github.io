@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style/login.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Edu-Sphere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Edu-Sphere</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html"><span>
+                    <span>
+                      <ion-icon id ="i1"name="home-outline"></ion-icon>
+                    </span>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard.html"><span >
+                    <ion-icon id ="i2" name="person-outline"></ion-icon>
+                  </span>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span><ion-icon id ="i4" name="shirt-outline"></ion-icon></span>Student</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span><ion-icon id ="i3"name="receipt-outline"></ion-icon></span>Report</a>
+                </li>
+                <li class="nav-item">
+                     <!--create login and sign up-->
+                  <a id ="log1" class="nav-link " href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a id ="log2" class="nav-link" href="/signup.html">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class ="container">
+        <form>
+          <div class ="box1">
+              <img class ="m1"src="/img/m3.svg" alt="">
+              <h2 class ="sign">Login</h2>
+          <div class ="container1">
+              <input class ="name2" type="email" placeholder="Email or Username">
+              <ion-icon  id ="name2" name="mail-outline"></ion-icon>
+          </div>
+          <div class ="container1">
+              <input class ="name3" type="password" placeholder="Password">
+              <ion-icon id ="name3" name="lock-closed-outline"></ion-icon>
+          </div>
+          <button type ="submit" class ="button1">Login</button>
+          <button type = "reset" class ="button2">Reset</button>
+      </form>
+        </div>
+    
+</body>
+</html>
